@@ -1,0 +1,143 @@
+/* Selector Global para todo el sitio*/
+* { margin: 0%;
+padding: 0%;}
+
+/*font*/
+* {@font-face { 
+    font-family:"alegreya" ;
+    src: url(alegreya/static/alegreya-medium.tff);}}
+* {color: rgb(169, 80, 2);}
+
+/*WEB DESING FIRST*/
+
+@media screen { min-width: 480px;
+    body ; }
+}
+
+
+
+
+
+/*estilo aplicado al head*/
+.modtitle { margin-left: 50%;}
+
+/*estilos estructura del body */
+
+body { height: 100vh; width: 100%;
+background-image: url(https://cdn.pixabay.com/photo/2013/07/18/10/56/fall-163496_960_720.jpg);
+background-size:cover;
+background-position:bottom}
+
+
+.borde {border: solid 5px rgb(169, 80, 2);
+}
+
+/*Grid aplicado al BODY */
+#bodygrid {display: grid;
+
+    grid-template-areas: 
+    "navegador cabeza"
+    "navegador principal"
+    "navegador pie" ;
+    grid-template-columns: 20% auto;
+    grid-template-rows: 1fr 1fr 1fr;
+ grid-column-gap: 5px;
+ grid-row-gap: 5px;
+
+ }
+    /*areas*/
+header { grid-area: cabeza;}
+main { grid-area: principal;}
+footer {grid-area: pie;}
+nav {grid-area: navegador;}
+
+
+/* modificaciones header */
+
+#headerflex {display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+font-size: 45px;
+justify-content: space-evenly;}
+
+header {padding-left: 5%;
+    border-radius: 10px;
+}
+
+.headerdegradado { background-image: linear-gradient(15deg, black 35%, rgba(255, 166, 0, 0.714) 70%, rgb(0, 0, 0))}
+
+/* modificaciones main */
+#mainflex { display: flex;
+    flex-flow: column wrap; }
+
+main { padding:10px 10px 10px 30%;
+height: 90%;
+width: 60%;}
+
+
+/*modificaciones footer */
+#footerflex {display: flex;
+flex-flow: row wrap;
+justify-content: flex-end;
+
+
+}
+
+footer {
+    height: auto;
+    width: 95%;
+    align-content: flex-end;
+    padding-left: 5%;
+    font-size: 20px;
+margin-right: 10px;
+border-radius: 20px;}
+
+.footerdegradado {background-image: linear-gradient(15deg, rgba(0, 0, 0, 0.578), orange 50%, black 80%)}
+
+footer section { padding-right: 10px;}
+
+
+
+
+/*modificaciones del Section*/
+ 
+
+#seccionflex { display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: space-around;}
+
+
+nav { font-size: 25px;
+    margin: 5px;
+    border-radius: 10px;
+   padding: 50px 50px 50px 40px
+    ;
+
+}
+
+div { width: 75px;
+    height: 75px;
+    padding-top: 25px; 
+}
+
+.resaltar { transition: all 2s}
+.resaltar :hover { width: 150px; color: yellow;}
+
+/* Estilos y Modificaciones Pag. Nuestra Mision*/
+
+#modfooternuestramision { margin-top: 550px
+    ;margin-left: 500px;}
+#modimgnuestramision { margin-left: 900px;}
+
+h2 {margin-left: 60%;}
+
+footer p {margin-left: 50%;}
+
+/*estilos y modificaciones Pag. Nuestros Clientes*/
+
+body ul { font-size: 45px;
+margin-top: 250px;
+margin-left: 1000px;}
+
+h3 { margin-top: 950px;}
