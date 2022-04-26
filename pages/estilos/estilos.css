@@ -6,7 +6,7 @@ padding: 0%;}
 * {@font-face { 
     font-family:"alegreya" ;
     src: url(alegreya/static/alegreya-medium.tff);}}
-* {color: rgb(169, 80, 2);}
+* {color: rgb(246, 120, 10);}
 
 /*WEB DESING FIRST*/
 
@@ -64,15 +64,19 @@ header {padding-left: 5%;
     border-radius: 10px;
 }
 
+
 .headerdegradado { background-image: linear-gradient(15deg, black 35%, rgba(255, 166, 0, 0.714) 70%, rgb(0, 0, 0))}
 
 /* modificaciones main */
-#mainflex { display: flex;
-    flex-flow: column wrap; }
+#mainFlexIndex { display: flex;
+    flex-flow: column
+     nowrap ;
+     align-items: center;
+     
+padding: 5% 0 10% 0;}
 
-main { padding:10px 10px 10px 30%;
-height: 90%;
-width: 60%;}
+.paddingMargenes {padding: 2% 0 2% 0; 
+font-size: 20px;}
 
 
 /*modificaciones footer */
@@ -82,15 +86,6 @@ justify-content: flex-end;
 
 
 }
-
-footer {
-    height: auto;
-    width: 95%;
-    align-content: flex-end;
-    padding-left: 5%;
-    font-size: 20px;
-margin-right: 10px;
-border-radius: 20px;}
 
 .footerdegradado {background-image: linear-gradient(15deg, rgba(0, 0, 0, 0.578), orange 50%, black 80%)}
 
@@ -105,10 +100,10 @@ footer section { padding-right: 10px;}
 #seccionflex { display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    align-items: space-around;}
+    align-items:center;}
 
 
-nav { font-size: 25px;
+#navModIndex{ font-size: 25px;
     margin: 5px;
     border-radius: 10px;
    padding: 50px 50px 50px 40px
@@ -116,28 +111,86 @@ nav { font-size: 25px;
 
 }
 
-div { width: 75px;
+#divModIndex { width: 75px;
     height: 75px;
     padding-top: 25px; 
 }
 
-.resaltar { transition: all 2s}
-.resaltar :hover { width: 150px; color: yellow;}
+.resaltar { transition: all 4s}
+.resaltar :hover { color: yellow;
+    size: 2cm;
+    } 
 
-/* Estilos y Modificaciones Pag. Nuestra Mision*/
 
-#modfooternuestramision { margin-top: 550px
-    ;margin-left: 500px;}
+/******** Estilos y Modificaciones Pag. Nuestra Mision***********/
+
+#gridBodyNuestraMision {display: grid; grid-template-areas:
+    "cabeza cabeza"
+    "cuerpo cuerpo"
+    "pie pie"
+;
+grid-template-columns: 10vh auto;
+grid-template-rows: 20vw 40vw 40vw;
+justify-content: space-evenly;}
+
+header { grid-area: cabeza;
+}
+body { grid-area: cuerpo;
+
+}
+
+footer { grid-area: pie;
+}
+
+#flexSectionNuestraMision { display: flex;
+flex-flow: row nowrap;
+justify-content:space-between; 
+;
+padding: 20px;
+}
+
+#modMainNuestraMision { display: flex;
+    flex-flow: column wrap;
+    align-items: end;
+padding: 5% 10% 5% 10%;
+}
+
+
+#modSpanNuestraMision { padding: 20px;
+    font-size: 20px;
+display: flex;
+flex-flow: column nowrap;}
+
+#modFooterNuestraMision { display: flex;
+    flex-flow: row wrap;
+justify-content: end;}
 #modimgnuestramision { margin-left: 900px;}
+
+#modParrafoNuestraMision { padding: 0 5% 3% 0;
+font-size: 18px;}
 
 h2 {margin-left: 60%;}
 
 footer p {margin-left: 50%;}
 
-/*estilos y modificaciones Pag. Nuestros Clientes*/
+/***********estilos y modificaciones Pag. Nuestros Clientes*************/
 
 body ul { font-size: 45px;
 margin-top: 250px;
 margin-left: 1000px;}
 
 h3 { margin-top: 950px;}
+
+/***********Estilos y Modificaciones Pag. Sobre Nosotros************/
+
+#modMainSobreNosotros { display: flex;
+flex-flow: column wrap;
+justify-content: end;
+padding: 20% 0 0 50% ;
+width: 35%;
+font-size: large;}
+
+#modSpanSobreNosotros 
+/***********Estilos y Modificaciones Pag. Contacto*************/
+
+#modFormContacto {padding-left: 30px;}
